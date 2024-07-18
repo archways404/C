@@ -198,5 +198,144 @@ int main()
 }
 
 
+struct struct_name {
+    member_type1 name1;
+    member_type1 name1;
+    .
+    .
+};
+
+
+/ C program to illustrate the use of structures 
+#include <stdio.h> 
+  
+// declaring structure with name str1 
+struct str1 { 
+    int i; 
+    char c; 
+    float f; 
+    char s[30]; 
+}; 
+  
+// declaring structure with name str2 
+struct str2 { 
+    int ii; 
+    char cc; 
+    float ff; 
+} var; // variable declaration with structure template 
+  
+// Driver code 
+int main() 
+{ 
+    // variable declaration after structure template 
+    // initialization with initializer list and designated 
+    // initializer list 
+    struct str1 var1 = { 1, 'A', 1.00, "GeeksforGeeks" }, 
+                var2; 
+    struct str2 var3 = { .ff = 5.00, .ii = 5, .cc = 'a' }; 
+  
+    // copying structure using assignment operator 
+    var2 = var1; 
+  
+    printf("Struct 1:\n\ti = %d, c = %c, f = %f, s = %s\n", 
+           var1.i, var1.c, var1.f, var1.s); 
+    printf("Struct 2:\n\ti = %d, c = %c, f = %f, s = %s\n", 
+           var2.i, var2.c, var2.f, var2.s); 
+    printf("Struct 3\n\ti = %d, c = %c, f = %f\n", var3.ii, 
+           var3.cc, var3.ff); 
+  
+    return 0; 
+}
+
+
+union union_name {
+    // members
+    .
+    .
+}
+
+
+
+// C Program to demonstrate how to use union 
+#include <stdio.h> 
+  
+// union template or declaration 
+union un { 
+    int member1; 
+    char member2; 
+    float member3; 
+}; 
+  
+// driver code 
+int main() 
+{ 
+  
+    // defining a union variable 
+    union un var1; 
+  
+    // initializing the union member 
+    var1.member1 = 15; 
+  
+    printf("The value stored in member1 = %d", 
+           var1.member1); 
+  
+    return 0; 
+}
+
+
+enum { name1, name2, name3 = value };
+
+#include <stdio.h> 
+  
+enum week { Mon, Tue, Wed, Thur, Fri, Sat, Sun }; 
+  
+int main() 
+{ 
+    enum week day; 
+    day = Wed; 
+    printf("%d", day); 
+    return 0; 
+}
+
+
+We can perform some set of operations on a file and C language provide some functions for it.
+
+    Creating a new file – fopen() with attributes as “a” or “a+” or “w” or “w+”
+    Opening an existing file – fopen()
+    Reading from file – fscanf() or fgets()
+    Writing to a file – fprintf() or fputs()
+    Moving to a specific location in a file – fseek(), rewind()
+    Closing a file – fclose()
+
+
+
+
+
+C Math Functions
+
+The <math.h> header file contains functions to perform the arithmetic operations. The following table contains some common maths functions in C:
+S.No. 	
+
+Function Name
+	
+
+Function Description
+
+1. ceil(x) Returns the largest integer smaller than or equal to x.
+2. floor(x) Returns the smallest integer larger than or equal to x.
+3. fabs(x) Returns the absolute value of x.
+4. sqrt(x) Returns the square root of x.
+5. cbrt(x) Returns the cube root of x.
+6. pow(x , y) Returns the value of x raised to the power y.
+7. exp(x) Returns the value of e(Euler’s Number) raised to the power x.
+8. fmod(x , y) Returns the remainder of x divided by y.
+9. log(x) Returns the natural logarithm of x.
+10. log10(x) Returns the common logarithm of x.
+11. cos(x) Returns the cosine of radian angle x.
+12. sin(x) Returns the sine of radian angle x.
+13. tan(x) Returns the tangent of radian angle x.
+
+
+
 
   
